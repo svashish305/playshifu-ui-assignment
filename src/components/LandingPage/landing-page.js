@@ -57,10 +57,10 @@ function LandingPage() {
 				<label className='component2-label1'>Works with plugo app</label>
 				<label className='component2-heading'>Five gaming kits</label>
 			</Container>
-			<Accordion defaultActiveKey='0'>
+			<Accordion>
 				<Card className='mt-30'>
 					<Card.Body>
-						<hr className='m-0 h-seg green float-left' />
+						<hr className='m-0 h-seg green-border float-left' />
 						<label className='card-subtext float-left'>WORD BUILDING</label>
 						<label className='mt-12 card-text green float-left'>Letters</label>
 						<Image
@@ -70,7 +70,81 @@ function LandingPage() {
 						/>
 						<ContextAwareToggle eventKey='0'></ContextAwareToggle>
 						<Accordion.Collapse eventKey='0'>
-							{/* put expanded content here */}
+							{/* put expanded content (carousel) here */}
+							<Card.Body>Hello! This card is now expanded</Card.Body>
+						</Accordion.Collapse>
+					</Card.Body>
+				</Card>
+			</Accordion>
+			<Accordion>
+				<Card>
+					<Card.Body>
+						<hr className='m-0 h-seg orange-border float-left' />
+						<label className='card-subtext float-left'>HANDS-ON MATH</label>
+						<label className='mt-12 card-text orange float-left'>Count</label>
+						<Image
+							className='card-img'
+							src='assets/images/lp-count.svg'
+							fluid
+						/>
+						<ContextAwareToggle eventKey='1'></ContextAwareToggle>
+						<Accordion.Collapse eventKey='1'>
+							{/* put expanded content (carousel) here */}
+							<Card.Body>Hello! This card is now expanded</Card.Body>
+						</Accordion.Collapse>
+					</Card.Body>
+				</Card>
+			</Accordion>
+			<Accordion>
+				<Card>
+					<Card.Body>
+						<hr className='m-0 h-seg purple-border float-left' />
+						<label className='card-subtext float-left'>MAGNETIC BLOCKS</label>
+						<label className='mt-12 card-text purple float-left'>Link</label>
+						<Image className='card-img' src='assets/images/lp-link.svg' fluid />
+						<ContextAwareToggle eventKey='2'></ContextAwareToggle>
+						<Accordion.Collapse eventKey='2'>
+							{/* put expanded content (carousel) here */}
+							<Card.Body>Hello! This card is now expanded</Card.Body>
+						</Accordion.Collapse>
+					</Card.Body>
+				</Card>
+			</Accordion>
+			<Accordion>
+				<Card>
+					<Card.Body>
+						<hr className='m-0 h-seg lightblue-border float-left' />
+						<label className='card-subtext float-left'>PIANO LEARNING</label>
+						<label className='mt-12 card-text lightblue float-left'>
+							Tunes
+						</label>
+						<Image
+							className='card-img'
+							src='assets/images/lp-tunes.svg'
+							fluid
+						/>
+						<ContextAwareToggle eventKey='3'></ContextAwareToggle>
+						<Accordion.Collapse eventKey='3'>
+							{/* put expanded content (carousel) here */}
+							<Card.Body>Hello! This card is now expanded</Card.Body>
+						</Accordion.Collapse>
+					</Card.Body>
+				</Card>
+			</Accordion>
+			<Accordion>
+				<Card>
+					<Card.Body>
+						<hr className='m-0 h-seg red-border float-left' />
+						<label className='card-subtext float-left'>FUN CATAPULT</label>
+						<label className='mt-12 card-text red float-left'>Slingshot</label>
+						<Image
+							className='card-img'
+							src='assets/images/lp-slingshot.svg'
+							fluid
+						/>
+						<ContextAwareToggle eventKey='4'></ContextAwareToggle>
+						<Accordion.Collapse eventKey='4'>
+							{/* put expanded content (carousel) here */}
 							<Card.Body>Hello! This card is now expanded</Card.Body>
 						</Accordion.Collapse>
 					</Card.Body>
