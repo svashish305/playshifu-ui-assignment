@@ -1,0 +1,106 @@
+@import './custom.scss';
+
+:root {
+	// colors
+	--primary: #eb1c4f;
+	--secondary: #fff;
+	--accent: #ff7e36;
+	--magenta: #f53e98;
+	--green: #73c23a;
+	--orange: #ff9234;
+	--purple: #7d32bf;
+	--blue: #09bdf2;
+	--red: #e6474a;
+}
+
+// fonts
+@font-face {
+	font-family: 'NunitoLight';
+	src: url('/assets/fonts/Nunito/Nunito-Light.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'NunitoRegular';
+	src: url('/assets/fonts/Nunito/Nunito-Regular.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'NunitoSemibold';
+	src: url('/assets/fonts/Nunito/Nunito-Semibold.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'NunitoMedium';
+	src: url('/assets/fonts/Nunito/Nunito-Medium.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'NunitoBold';
+	src: url('/assets/fonts/Nunito/Nunito-Bold.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'NunitoExtrabold';
+	src: url('/assets/fonts/Nunito/Nunito-Extrabold.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.App {
+	text-align: center;
+}
+
+.App-header {
+	background-color: #fff;
+	min-height: 6vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: var(--red);
+}
+
+.logo {
+	float: left;
+	height: 2.25rem;
+}
+
+.shop-btn {
+	color: var(--red);
+	border: solid 1px var(--red);
+	border-radius: 0.6rem;
+	font-family: NunitoLight;
+	zoom: 0.65;
+}
+
+.header-right {
+	float: right;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.header-right-icon {
+	height: 1.5rem;
+}
+
+// common styles
+.pointer {
+	cursor: pointer;
+}
+
+.flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
