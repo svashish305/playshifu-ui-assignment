@@ -137,7 +137,21 @@ function LandingPage() {
 											Learn More
 										</Button>
 									</Row>
-									<Row className='ml-0 mt-24'>Next row</Row>
+									<Row className='ml-0 mt-24'>
+										{/* customize radio button */}
+										<div class='form-check'>
+											<input
+												class='form-check-input'
+												type='radio'
+												name='flexRadioDefault'
+												id='flexRadioDefault2'
+												checked
+											/>
+											<label class='form-check-label' for='flexRadioDefault2'>
+												$64.99
+											</label>
+										</div>
+									</Row>
 								</Container>
 							</div>
 						</Accordion.Collapse>
