@@ -4,7 +4,7 @@ import './landing-page.scss';
 
 function LandingPage() {
 	return (
-		<React.Fragment>
+		<div className='landing-page'>
 			<Container className='p-0'>
 				<Image className='plugo-img' src='assets/images/plugo-logo.svg' />
 				<label className='plugo-caption'>
@@ -18,7 +18,11 @@ function LandingPage() {
 				/>
 				<Image src='assets/images/lp-banner.svg' fluid />
 			</Container>
-		</React.Fragment>
+			<Container className='p-0 mt-40'>
+				<label className='component2-label1'>Works with plugo app</label>
+				<label className='component2-heading'>Five gaming kits</label>
+			</Container>
+		</div>
 	);
 }
 

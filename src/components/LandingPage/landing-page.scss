@@ -26,3 +26,19 @@
 	left: 0;
 	right: 0;
 }
+
+.component2-label1 {
+	color: var(--blue);
+	font-family: NunitoRegular;
+	font-size: 0.75rem;
+	line-height: 1rem;
+	letter-spacing: 0.5em;
+	text-transform: uppercase;
+}
+
+.component2-heading {
+	color: var(--magenta);
+	font-family: NunitoBold;
+	font-size: 2.25rem;
+	text-transform: capitalize;
+}
