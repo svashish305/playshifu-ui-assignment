@@ -57,7 +57,7 @@ function LandingPage() {
 				<label className='component2-label1'>Works with plugo app</label>
 				<label className='component2-heading'>Five gaming kits</label>
 			</Container>
-			<Accordion>
+			<Accordion defaultActiveKey='0'>
 				<Card className='mt-30'>
 					<Card.Body>
 						<hr className='m-0 h-seg green float-left' />
