@@ -42,3 +42,38 @@
 	font-size: 2.25rem;
 	text-transform: capitalize;
 }
+
+.card-body {
+	padding-left: 0;
+}
+
+.h-seg {
+	width: 1.5rem;
+	border: solid 1px var(--green);
+}
+
+.card-subtext {
+	color: var(--gray);
+	font-family: NunitoLight;
+	font-size: 0.75rem;
+	line-height: 1rem;
+	letter-spacing: 0.2em;
+	position: absolute;
+	top: 1rem;
+	left: 3rem;
+}
+
+.card-text {
+	font-family: NunitoBold;
+	font-size: 1.5rem;
+	line-height: 2rem;
+	position: absolute;
+	top: 2rem;
+	left: 3rem;
+}
+
+.card-img {
+	width: 6.125rem;
+	height: 6.125rem;
+	margin-left: 8rem;
+}
