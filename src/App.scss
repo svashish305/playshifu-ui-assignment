@@ -12,6 +12,7 @@
 	--lightblue: #09bdf2;
 	--blue: #4c4fa2;
 	--gray: #858f9c;
+	--gray2: #83909e;
 	--red: #e6474a;
 }
 
@@ -115,8 +116,28 @@
 	margin-top: 1.875rem;
 }
 
+.mt-24 {
+	margin-top: 1.5rem;
+}
+
+.mt-18 {
+	margin-top: 1.125rem;
+}
+
 .mt-12 {
 	margin-top: 0.75px;
+}
+
+.mr-8 {
+	margin-right: 0.5rem;
+}
+
+.ml-16 {
+	margin-left: 1rem;
+}
+
+.ml-0 {
+	margin-left: 0;
 }
 
 .green {
@@ -157,4 +178,17 @@
 
 .red-border {
 	border-color: var(--red) !important;
+}
+
+.gray-text {
+	color: var(--gray2);
+	font-family: NunitoRegular;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	text-align: justify;
+}
+
+ul {
+	padding-inline-start: 1.875rem;
+	list-style-image: url(/assets/images/ul-icon.svg);
 }

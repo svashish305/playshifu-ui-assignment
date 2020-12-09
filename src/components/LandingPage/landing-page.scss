@@ -16,7 +16,6 @@
 	height: 5.312rem;
 	color: var(--secondary);
 	font-family: NunitoBold;
-	line-height: 1.875rem;
 }
 
 .video-play-img {
@@ -31,7 +30,6 @@
 	color: var(--blue);
 	font-family: NunitoRegular;
 	font-size: 0.75rem;
-	line-height: 1rem;
 	letter-spacing: 0.5em;
 	text-transform: uppercase;
 }
@@ -56,7 +54,6 @@
 	color: var(--gray);
 	font-family: NunitoLight;
 	font-size: 0.75rem;
-	line-height: 1rem;
 	letter-spacing: 0.2em;
 	position: absolute;
 	top: 1rem;
@@ -66,7 +63,6 @@
 .card-text {
 	font-family: NunitoBold;
 	font-size: 1.5rem;
-	line-height: 2rem;
 	position: absolute;
 	top: 2rem;
 	left: 3rem;
@@ -76,4 +72,17 @@
 	width: 6.125rem;
 	height: 6.125rem;
 	margin-left: 8rem;
+}
+
+.more-thumbnail-imgs {
+	width: 3.125rem;
+	height: 3.125rem;
+}
+
+.open-modal-btn {
+	border-radius: 2.062rem;
+	font-family: NunitoBold;
+	font-size: 1rem;
+	position: absolute;
+	right: 1rem;
 }
