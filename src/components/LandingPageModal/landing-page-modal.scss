@@ -1,0 +1,32 @@
+.modal-content {
+	border-radius: 1.812rem;
+}
+
+.modal-header {
+	border-bottom: none;
+	font-family: NunitoBold;
+	font-size: 1.125rem;
+}
+
+a {
+	color: var(--black);
+}
+
+.nav-tabs .nav-link {
+	box-shadow: 0 3px rgba(0, 0, 0, 0.1);
+}
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+	color: var(--red);
+	border-bottom: solid 3px var(--red);
+	box-shadow: none;
+}
+
+.modal-footer {
+	border-top: none;
+}
+
+.btn-link {
+	text-decoration: underline;
+}
