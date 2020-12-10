@@ -139,18 +139,52 @@ function LandingPage() {
 									</Row>
 									<Row className='ml-0 mt-24'>
 										{/* customize radio button */}
-										<div class='form-check'>
+										<div className='p-0 form-check'>
 											<input
-												class='form-check-input'
+												className='form-check-input'
+												type='radio'
+												name='flexRadioDefault'
+												id='flexRadioDefault1'
+												checked
+											/>
+											<label
+												className='form-check-label price'
+												for='flexRadioDefault1'
+											>
+												$64.99
+											</label>
+											<br />
+											<span className='gray-text'>
+												Letters + gamepad
+												<br />
+												(My first Plugo kit)
+											</span>
+										</div>
+										<div className='ml-14 p-0 form-check'>
+											<input
+												className='form-check-input'
 												type='radio'
 												name='flexRadioDefault'
 												id='flexRadioDefault2'
-												checked
 											/>
-											<label class='form-check-label' for='flexRadioDefault2'>
-												$64.99
+											<label
+												className='form-check-label price'
+												for='flexRadioDefault2'
+											>
+												$34.99
 											</label>
+											<br />
+											<span className='gray-text'>
+												Letters kit
+												<br />
+												(I have a gamepad)
+											</span>
 										</div>
+									</Row>
+									<Row>
+										<Button variant='primary' className='mt-26 ml-16 cart-btn'>
+											Add to cart
+										</Button>
 									</Row>
 								</Container>
 							</div>

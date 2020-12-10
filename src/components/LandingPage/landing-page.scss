@@ -86,3 +86,20 @@
 	position: absolute;
 	right: 1rem;
 }
+
+.form-check {
+	flex: 1;
+}
+
+.price {
+	color: var(--primary);
+	font-family: NunitoBold;
+	font-size: 1.125rem;
+}
+
+.cart-btn {
+	width: 8rem;
+	border-radius: 2.062rem;
+	font-family: NunitoBold;
+	font-size: 1.125rem;
+}
