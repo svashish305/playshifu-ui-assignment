@@ -28,6 +28,11 @@ a {
 	box-shadow: none;
 }
 
+.modal-body {
+	height: 32.125rem;
+	overflow-y: auto;
+}
+
 .mb-heading {
 	color: var(--black);
 	font-family: NunitoBold;
