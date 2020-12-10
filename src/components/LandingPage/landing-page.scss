@@ -74,6 +74,22 @@
 	margin-left: 8rem;
 }
 
+.carousel-indicators {
+	bottom: -3.25rem;
+}
+
+.carousel-indicators .active {
+	background-color: var(--black);
+}
+
+.carousel-indicators li {
+	width: 6px;
+	height: 6px;
+	margin-right: 0.625rem;
+	border-radius: 100%;
+	background-color: var(--gray);
+}
+
 .more-thumbnail-imgs {
 	width: 3.125rem;
 	height: 3.125rem;

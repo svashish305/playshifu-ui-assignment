@@ -73,8 +73,8 @@ function LandingPage() {
 						/>
 						<ContextAwareToggle eventKey='0'></ContextAwareToggle>
 						<Accordion.Collapse eventKey='0'>
-							<div className='mt-18'>
-								<Carousel className='ml-16'>
+							<div>
+								<Carousel className='ml-16' controls={false}>
 									<Carousel.Item interval={1000}>
 										<Image
 											className='d-block w-100'
@@ -108,7 +108,7 @@ function LandingPage() {
 										/>
 									</Carousel.Item>
 								</Carousel>
-								<Container className='mt-18'>
+								<Container className='mt-40'>
 									<Row>
 										<p className='ml-16 gray-text'>
 											Bring alive stories on screen by spelling words, letter by
