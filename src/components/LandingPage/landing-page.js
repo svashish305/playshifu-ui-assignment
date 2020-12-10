@@ -151,14 +151,14 @@ function LandingPage() {
 										{/* customize radio button */}
 										<div className='p-0 form-check'>
 											<input
-												className='form-check-input'
+												className='l-16 form-check-input'
 												type='radio'
 												name='flexRadioDefault'
 												id='flexRadioDefault1'
 												checked
 											/>
 											<label
-												className='form-check-label price'
+												className='ml--42 form-check-label price'
 												for='flexRadioDefault1'
 											>
 												$64.99
@@ -170,15 +170,15 @@ function LandingPage() {
 												(My first Plugo kit)
 											</span>
 										</div>
-										<div className='ml-14 p-0 form-check'>
+										<div className='ml--16 p-0 form-check'>
 											<input
-												className='form-check-input'
+												className='ml--48 form-check-input'
 												type='radio'
 												name='flexRadioDefault'
 												id='flexRadioDefault2'
 											/>
 											<label
-												className='form-check-label price'
+												className='ml--16 form-check-label price'
 												for='flexRadioDefault2'
 											>
 												$34.99

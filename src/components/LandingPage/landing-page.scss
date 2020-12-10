@@ -91,6 +91,34 @@
 	flex: 1;
 }
 
+input[type='radio']:after {
+	width: 1.5rem;
+	height: 1.5rem;
+	border-radius: 15px;
+	top: -4px;
+	left: -1px;
+	position: relative;
+	background: url(/assets/images/radio-false.svg) no-repeat;
+	content: '';
+	display: inline-block;
+	visibility: visible;
+	border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+	width: 1.5rem;
+	height: 1.5rem;
+	border-radius: 15px;
+	top: -4px;
+	left: -1px;
+	position: relative;
+	background: url(/assets/images/radio-true.svg) no-repeat;
+	content: '';
+	display: inline-block;
+	visibility: visible;
+	border: 2px solid white;
+}
+
 .price {
 	color: var(--primary);
 	font-family: NunitoBold;
