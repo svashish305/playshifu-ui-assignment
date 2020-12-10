@@ -8,11 +8,16 @@
 	font-size: 1.125rem;
 }
 
+.tab-header {
+	width: -webkit-fill-available;
+}
+
 a {
 	color: var(--black);
 }
 
 .nav-tabs .nav-link {
+	border: none;
 	box-shadow: 0 3px rgba(0, 0, 0, 0.1);
 }
 
@@ -21,6 +26,32 @@ a {
 	color: var(--red);
 	border-bottom: solid 3px var(--red);
 	box-shadow: none;
+}
+
+.mb-heading {
+	color: var(--black);
+	font-family: NunitoBold;
+	font-size: 1rem;
+}
+
+.mb-text {
+	color: var(--gray);
+	font-family: NunitoRegular;
+	font-size: 1rem;
+}
+
+.modal-ul {
+	padding-inline-start: 1rem;
+	list-style-image: url(/assets/images/ul-disc-red.svg);
+}
+
+.modal-img {
+	padding-right: 1rem;
+	margin-bottom: 0.812rem;
+}
+
+.modal-ol {
+	padding-inline-start: 1rem;
 }
 
 .modal-footer {

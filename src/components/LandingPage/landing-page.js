@@ -2,7 +2,6 @@ import React, { useContext } from 'react';
 import {
 	Container,
 	Row,
-	Col,
 	Image,
 	Button,
 	Accordion,
