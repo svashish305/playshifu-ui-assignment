@@ -41,6 +41,11 @@
 	text-transform: capitalize;
 }
 
+.card {
+	border: none;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.125) !important;
+}
+
 .card-body {
 	padding-left: 0;
 }
