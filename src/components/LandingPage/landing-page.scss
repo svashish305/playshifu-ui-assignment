@@ -100,6 +100,12 @@
 	height: 3.125rem;
 }
 
+.img-overlay-text {
+	color: var(--secondary);
+	position: relative;
+	right: 2rem;
+}
+
 .open-modal-btn {
 	border-radius: 2.062rem;
 	font-family: NunitoBold;

@@ -135,6 +135,7 @@ function LandingPage() {
 											className='more-thumbnail-imgs'
 											src='assets/images/game-modal-3.svg'
 										/>
+										<span className='img-overlay-text'>+4</span>
 										<Button
 											className='open-modal-btn'
 											variant='outline-accent'
