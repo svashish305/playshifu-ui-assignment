@@ -12,8 +12,11 @@ import {
 } from 'react-bootstrap';
 import { useAccordionToggle } from 'react-bootstrap/AccordionToggle';
 import './landing-page.scss';
+import LandingPageModal from '../LandingPageModal/landing-page-modal';
 
 function LandingPage() {
+	const [modalShow, setModalShow] = React.useState(false);
+
 	function ContextAwareToggle({ children, eventKey, callback }) {
 		const currentEventKey = useContext(AccordionContext);
 
@@ -133,9 +136,17 @@ function LandingPage() {
 											className='more-thumbnail-imgs'
 											src='assets/images/game-modal-3.svg'
 										/>
-										<Button className='open-modal-btn' variant='outline-accent'>
+										<Button
+											className='open-modal-btn'
+											variant='outline-accent'
+											onClick={() => setModalShow(true)}
+										>
 											Learn More
 										</Button>
+										<LandingPageModal
+											show={modalShow}
+											onHide={() => setModalShow(false)}
+										/>
 									</Row>
 									<Row className='ml-0 mt-24'>
 										{/* customize radio button */}
