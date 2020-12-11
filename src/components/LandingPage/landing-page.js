@@ -36,6 +36,39 @@ function LandingPage() {
 		);
 	}
 
+	const sections = [
+		{
+			color: 'green',
+			subText: 'WORD BUILDING',
+			text: 'Letters',
+			sectionName: 'letters',
+		},
+		{
+			color: 'orange',
+			subText: 'HANDS-ON MATH',
+			text: 'Count',
+			sectionName: 'count',
+		},
+		{
+			color: 'purple',
+			subText: 'MAGNETIC BLOCKS',
+			text: 'Link',
+			sectionName: 'link',
+		},
+		{
+			color: 'lightblue',
+			subText: 'PIANO LEARNING',
+			text: 'Tunes',
+			sectionName: 'tunes',
+		},
+		{
+			color: 'red',
+			subText: 'FUN CATAPULT',
+			text: 'Slingshot',
+			sectionName: 'slingshot',
+		},
+	];
+
 	return (
 		<div className='landing-page'>
 			<Container className='p-0'>
@@ -51,97 +84,43 @@ function LandingPage() {
 				/>
 				<Image src='assets/images/lp-banner.svg' fluid />
 			</Container>
-			<Container className='p-0 mt-40'>
+			<Container className='p-0 mt-40 mb-30'>
 				<label className='component2-label1'>Works with plugo app</label>
 				<label className='component2-heading'>Five gaming kits</label>
 			</Container>
 			<Accordion>
-				<Card className='mt-30'>
-					<Card.Body>
-						<hr className='m-0 h-seg green-border float-left' />
-						<label className='card-subtext float-left'>WORD BUILDING</label>
-						<label className='mt-12 card-text green float-left'>Letters</label>
-						<Image
-							className='card-img'
-							src='assets/images/lp-letters.svg'
-							fluid
-						/>
-						<ContextAwareToggle eventKey='0'></ContextAwareToggle>
-						<Accordion.Collapse eventKey='0'>
-							<ExpandedContent eventKey='0' />
-						</Accordion.Collapse>
-					</Card.Body>
-				</Card>
-			</Accordion>
-			<Accordion>
-				<Card>
-					<Card.Body>
-						<hr className='m-0 h-seg orange-border float-left' />
-						<label className='card-subtext float-left'>HANDS-ON MATH</label>
-						<label className='mt-12 card-text orange float-left'>Count</label>
-						<Image
-							className='card-img'
-							src='assets/images/lp-count.svg'
-							fluid
-						/>
-						<ContextAwareToggle eventKey='1'></ContextAwareToggle>
-						<Accordion.Collapse eventKey='1'>
-							<ExpandedContent eventKey='1' />
-						</Accordion.Collapse>
-					</Card.Body>
-				</Card>
-			</Accordion>
-			<Accordion>
-				<Card>
-					<Card.Body>
-						<hr className='m-0 h-seg purple-border float-left' />
-						<label className='card-subtext float-left'>MAGNETIC BLOCKS</label>
-						<label className='mt-12 card-text purple float-left'>Link</label>
-						<Image className='card-img' src='assets/images/lp-link.svg' fluid />
-						<ContextAwareToggle eventKey='2'></ContextAwareToggle>
-						<Accordion.Collapse eventKey='2'>
-							<ExpandedContent eventKey='2' />
-						</Accordion.Collapse>
-					</Card.Body>
-				</Card>
-			</Accordion>
-			<Accordion>
-				<Card>
-					<Card.Body>
-						<hr className='m-0 h-seg lightblue-border float-left' />
-						<label className='card-subtext float-left'>PIANO LEARNING</label>
-						<label className='mt-12 card-text lightblue float-left'>
-							Tunes
-						</label>
-						<Image
-							className='card-img'
-							src='assets/images/lp-tunes.svg'
-							fluid
-						/>
-						<ContextAwareToggle eventKey='3'></ContextAwareToggle>
-						<Accordion.Collapse eventKey='3'>
-							<ExpandedContent eventKey='3' />
-						</Accordion.Collapse>
-					</Card.Body>
-				</Card>
-			</Accordion>
-			<Accordion>
-				<Card>
-					<Card.Body>
-						<hr className='m-0 h-seg red-border float-left' />
-						<label className='card-subtext float-left'>FUN CATAPULT</label>
-						<label className='mt-12 card-text red float-left'>Slingshot</label>
-						<Image
-							className='card-img'
-							src='assets/images/lp-slingshot.svg'
-							fluid
-						/>
-						<ContextAwareToggle eventKey='4'></ContextAwareToggle>
-						<Accordion.Collapse eventKey='4'>
-							<ExpandedContent eventKey='4' />
-						</Accordion.Collapse>
-					</Card.Body>
-				</Card>
+				{sections &&
+					sections.length > 0 &&
+					sections.map((section, index) => {
+						return (
+							<Card>
+								<Card.Body>
+									<hr
+										className={`m-0 h-seg ${section.color}-border float-left`}
+									/>
+									<label className='card-subtext float-left'>
+										{section.subText}
+									</label>
+									<label
+										className={`mt-12 card-text ${section.color} float-left`}
+									>
+										{section.text}
+									</label>
+									<Image
+										className='card-img'
+										src={`assets/images/lp-${section.sectionName}.svg`}
+										fluid
+									/>
+									<ContextAwareToggle
+										eventKey={`${index}`}
+									></ContextAwareToggle>
+									<Accordion.Collapse eventKey={`${index}`}>
+										<ExpandedContent eventKey={`${index}`} />
+									</Accordion.Collapse>
+								</Card.Body>
+							</Card>
+						);
+					})}
 			</Accordion>
 		</div>
 	);
