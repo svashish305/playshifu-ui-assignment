@@ -93,7 +93,7 @@ function LandingPage() {
 					sections.length > 0 &&
 					sections.map((section, index) => {
 						return (
-							<Card>
+							<Card key={section && index}>
 								<Card.Body>
 									<hr
 										className={`m-0 h-seg ${section.color}-border float-left`}
