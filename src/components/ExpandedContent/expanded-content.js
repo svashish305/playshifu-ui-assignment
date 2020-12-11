@@ -8,33 +8,37 @@ export default function ExpandedContent(props) {
 
 	const [sectionName, setSectionName] = useState('');
 
-	useEffect(() => {
-		switch (props.eventKey) {
-			case '0':
-				setSectionName('letters');
-				break;
-			case '1':
-				setSectionName('counts');
-				break;
-			case '2':
-				setSectionName('links');
-				break;
-			case '3':
-				setSectionName('tunes');
-				break;
-			case '4':
-				setSectionName('slingshot');
-				break;
-			default:
-				setSectionName('');
-				break;
-		}
-	}, [props.eventKey]);
+	useEffect(
+		() => {
+			switch (props.eventKey) {
+				case '0':
+					setSectionName('letters');
+					break;
+				case '1':
+					setSectionName('counts');
+					break;
+				case '2':
+					setSectionName('links');
+					break;
+				case '3':
+					setSectionName('tunes');
+					break;
+				case '4':
+					setSectionName('slingshot');
+					break;
+				default:
+					setSectionName('');
+					break;
+			}
+		},
+		// eslint-disable-next-line
+		[props]
+	);
 
 	return (
 		<div>
-			<Carousel className='ml-16' controls={false}>
-				<Carousel.Item interval={1000}>
+			<Carousel className='ml-16' controls={false} interval={1000}>
+				<Carousel.Item>
 					<Image
 						className='d-block w-100'
 						src={`assets/images/${sectionName}1-1x.svg`}
@@ -42,7 +46,7 @@ export default function ExpandedContent(props) {
 						fluid
 					/>
 				</Carousel.Item>
-				<Carousel.Item interval={1000}>
+				<Carousel.Item>
 					<Image
 						className='d-block w-100'
 						src={`assets/images/${sectionName}2-1x.svg`}
@@ -50,7 +54,7 @@ export default function ExpandedContent(props) {
 						fluid
 					/>
 				</Carousel.Item>
-				<Carousel.Item interval={1000}>
+				<Carousel.Item>
 					<Image
 						className='d-block w-100'
 						src={`assets/images/${sectionName}3-1x.svg`}
@@ -58,7 +62,7 @@ export default function ExpandedContent(props) {
 						fluid
 					/>
 				</Carousel.Item>
-				<Carousel.Item interval={1000}>
+				<Carousel.Item>
 					<Image
 						className='d-block w-100'
 						src={`assets/images/${sectionName}4-1x.svg`}
@@ -83,7 +87,6 @@ export default function ExpandedContent(props) {
 				<Row className='ml-0 d-flex align-items-center'>
 					<Image className='mr-8' src='assets/images/game-thumbnail-1.svg' />
 					<Image className='mr-8' src='assets/images/game-thumbnail-2.svg' />
-					{/* add text overlay for counter to below image */}
 					<Image
 						className='more-thumbnail-imgs'
 						src='assets/images/game-modal-3.svg'
@@ -109,11 +112,11 @@ export default function ExpandedContent(props) {
 							type='radio'
 							name='flexRadioDefault'
 							id='flexRadioDefault1'
-							checked
+							defaultChecked
 						/>
 						<label
 							className='ml--42 form-check-label price'
-							for='flexRadioDefault1'
+							htmlFor='flexRadioDefault1'
 						>
 							$64.99
 						</label>
@@ -133,7 +136,7 @@ export default function ExpandedContent(props) {
 						/>
 						<label
 							className='ml--16 form-check-label price'
-							for='flexRadioDefault2'
+							htmlFor='flexRadioDefault2'
 						>
 							$34.99
 						</label>
