@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useState, useContext } from 'react';
 import {
 	Container,
 	Image,
@@ -11,13 +11,16 @@ import ExpandedContent from '../ExpandedContent/expanded-content';
 import './landing-page.scss';
 
 function LandingPage() {
+	const [isExpanded, setIsExpanded] = useState(true);
+
 	function ContextAwareToggle({ children, eventKey, callback }) {
 		const currentEventKey = useContext(AccordionContext);
 
-		const decoratedOnClick = useAccordionToggle(
-			eventKey,
-			() => callback && callback(eventKey)
-		);
+		const decoratedOnClick = useAccordionToggle(eventKey, () => {
+			callback && callback(eventKey);
+			setIsExpanded(!isExpanded);
+			// console.log('expanded ? ', isExpanded);
+		});
 
 		const isCurrentEventKey = currentEventKey === eventKey;
 
@@ -115,7 +118,10 @@ function LandingPage() {
 										eventKey={`${index}`}
 									></ContextAwareToggle>
 									<Accordion.Collapse eventKey={`${index}`}>
-										<ExpandedContent eventKey={`${index}`} />
+										<ExpandedContent
+											eventKey={`${index}`}
+											isExpanded={!isExpanded}
+										/>
 									</Accordion.Collapse>
 								</Card.Body>
 							</Card>

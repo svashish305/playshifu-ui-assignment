@@ -6,6 +6,8 @@ import LandingPageModal from '../LandingPageModal/landing-page-modal';
 export default function ExpandedContent(props) {
 	const [modalShow, setModalShow] = useState(false);
 
+	const [interval, setInterval] = useState(null);
+
 	const [sectionName, setSectionName] = useState('');
 
 	useEffect(
@@ -30,6 +32,11 @@ export default function ExpandedContent(props) {
 					setSectionName('');
 					break;
 			}
+			if (props.isExpanded) {
+				setInterval(1000);
+			} else {
+				setInterval(null);
+			}
 		},
 		// eslint-disable-next-line
 		[props]
@@ -37,7 +44,7 @@ export default function ExpandedContent(props) {
 
 	return (
 		<div>
-			<Carousel className='ml-16' controls={false} interval={1000}>
+			<Carousel className='ml-16' controls={false} interval={interval}>
 				<Carousel.Item>
 					<Image
 						className='d-block w-100'
@@ -105,7 +112,6 @@ export default function ExpandedContent(props) {
 					/>
 				</Row>
 				<Row className='ml-0 mt-24'>
-					{/* customize radio button */}
 					<div className='p-0 form-check'>
 						<input
 							className='l-16 form-check-input'
