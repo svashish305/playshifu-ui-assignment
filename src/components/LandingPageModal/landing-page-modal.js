@@ -33,7 +33,7 @@ export default function LandingPageModal(props) {
 			case 'games':
 				return (
 					<div>
-						<Container>
+						<Container className='p-0'>
 							<Image
 								className='modal-img'
 								src='assets/images/game-modal-1.svg'
@@ -138,7 +138,11 @@ export default function LandingPageModal(props) {
 			</Modal.Header>
 			<Modal.Body>{renderTabContent(key)}</Modal.Body>
 			<Modal.Footer className='flex-center'>
-				<Button variant='link' onClick={props.onHide}>
+				<Button
+					variant='link'
+					onClick={props.onHide}
+					className='modal-close-btn'
+				>
 					Close
 					<Image className='ml-4' src='assets/images/close-icon.svg' fluid />
 				</Button>

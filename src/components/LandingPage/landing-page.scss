@@ -12,17 +12,17 @@
 	margin: 0 auto;
 	left: 0;
 	right: 0;
-	width: 11.5rem;
+	width: 51.111vw;
 	height: 5.312rem;
 	color: var(--secondary);
 	font-family: NunitoBold;
-	font-size: 1.375rem;
-	line-height: 1.875rem;
+	font-size: 6.111vw;
+	line-height: 8.333vw;
 }
 
 .video-play-img {
 	position: absolute;
-	top: 16.5rem;
+	top: 82.222vw;
 	margin: 0 auto;
 	left: 0;
 	right: 0;
@@ -31,17 +31,17 @@
 .component2-label1 {
 	color: var(--blue);
 	font-family: NunitoRegular;
-	font-size: 0.75rem;
+	font-size: 3.333vw;
 	letter-spacing: 0.5em;
-	line-height: 1rem;
+	line-height: 4.444vw;
 	text-transform: uppercase;
 }
 
 .component2-heading {
 	color: var(--magenta);
 	font-family: NunitoBold;
-	font-size: 2.25rem;
-	line-height: 2.937rem;
+	font-size: 10vw;
+	line-height: 13.056vw;
 	text-transform: capitalize;
 }
 
@@ -62,25 +62,25 @@
 .card-subtext {
 	color: var(--gray);
 	font-family: NunitoLight;
-	font-size: 0.75rem;
-	line-height: 1rem;
+	font-size: 3.333vw;
+	line-height: 4.444vw;
 	letter-spacing: 0.2em;
 	position: absolute;
-	top: 1rem;
+	top: 0.85rem;
 	left: 3rem;
 }
 
 .card-text {
 	font-family: NunitoBold;
-	font-size: 1.5rem;
-	line-height: 2rem;
+	font-size: 6.667vw;
+	line-height: 9.167vw;
 	position: absolute;
 	top: 2rem;
 	left: 3rem;
 }
 
 .card-img {
-	width: 6.125rem;
-	height: 6.125rem;
-	margin-left: 8rem;
+	width: 27.222vw;
+	height: 27.222vw;
+	margin-left: 50.556vw;
 }

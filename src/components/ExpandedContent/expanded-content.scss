@@ -15,7 +15,7 @@
 }
 
 li {
-	line-height: 1.25rem;
+	line-height: 6.25vw;
 }
 
 .more-thumbnail-imgs {
@@ -32,7 +32,7 @@ li {
 .open-modal-btn {
 	border-radius: 2.062rem;
 	font-family: NunitoBold;
-	font-size: 1rem;
+	font-size: 4.167vw;
 	position: absolute;
 	right: 1rem;
 }
@@ -72,17 +72,17 @@ input[type='radio']:checked:after {
 .price {
 	color: var(--primary);
 	font-family: NunitoBold;
-	font-size: 1.125rem;
-	line-height: 1.875rem;
+	font-size: 5vw;
+	line-height: 8.056vw;
 }
 
 span {
-	line-height: 1.25rem;
+	line-height: 6.25vw;
 }
 
 .cart-btn {
-	width: 8rem;
+	width: 38vw;
 	border-radius: 2.062rem;
 	font-family: NunitoBold;
-	font-size: 1.125rem;
+	font-size: 5vw;
 }
